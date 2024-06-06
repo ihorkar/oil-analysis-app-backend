@@ -1,0 +1,462 @@
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-03-22 17:18:20.898] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-03-22 17:18:21.546] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Fri Mar 22 2024 17:18:21 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 2401 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2021                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2024-03-22 17:19:01.615] [32mhttp[39m: GET /admin/project-type (33 ms) 200
+[2024-03-22 17:19:01.893] [32mhttp[39m: GET /admin/init (31 ms) 200
+[2024-03-22 17:19:02.053] [32mhttp[39m: GET /admin/telemetry-properties (5 ms) 401
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-03-22 17:29:41.103] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-03-22 17:29:41.691] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Fri Mar 22 2024 17:29:41 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 2298 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2007                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2024-03-23 19:26:23.466] [32mhttp[39m: GET index.html (45 ms) 200
+[2024-03-24 11:04:11.787] [32mhttp[39m: OPTIONS /api/auth/local (1 ms) 204
+[2024-03-24 11:04:12.109] [32mhttp[39m: POST /api/auth/local (185 ms) 200
+[2024-03-24 11:04:12.252] [32mhttp[39m: OPTIONS /api/users/me?populate=role (1 ms) 204
+[2024-03-24 11:04:12.405] [32mhttp[39m: GET /api/users/me?populate=role (22 ms) 200
+[2024-03-24 11:04:18.353] [32mhttp[39m: POST /api/auth/local (180 ms) 200
+[2024-03-24 11:04:18.543] [32mhttp[39m: GET /api/users/me?populate=role (36 ms) 200
+[2024-03-24 11:04:31.214] [32mhttp[39m: OPTIONS /api/oil-samples (1 ms) 204
+[2024-03-24 11:04:31.499] [32mhttp[39m: GET /api/oil-samples (142 ms) 200
+[2024-03-24 11:05:28.311] [32mhttp[39m: OPTIONS /api/oil-samples/2 (1 ms) 204
+[2024-03-24 11:05:28.472] [32mhttp[39m: GET /api/oil-samples/2 (25 ms) 200
+[2024-03-24 11:05:29.510] [32mhttp[39m: OPTIONS /api/oil-samples/report (1 ms) 204
+[2024-03-24 11:05:29.637] [32mhttp[39m: OPTIONS /api/oil-samples/fetch-previous-samples (0 ms) 204
+[2024-03-24 11:05:29.825] [31merror[39m: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000041BO.csv'
+Error: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000041BO.csv'
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at Object.getReport (/home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:43:22)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at returnBodyMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:42:24)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at policiesMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/policy.js:15:11)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:27:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-03-24 11:05:29.826] [32mhttp[39m: POST /api/oil-samples/report (183 ms) 500
+[2024-03-24 11:05:29.983] [31merror[39m: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+Error: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:81:23
+    at Array.map (<anonymous>)
+    at Object.fetchPreviousSamples (/home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:79:6)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async returnBodyMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:42:18)
+    at async policiesMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/policy.js:15:5)
+    at async /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:27:12
+    at async /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/middlewares/body.js:45:9
+[2024-03-24 11:05:29.984] [32mhttp[39m: POST /api/oil-samples/fetch-previous-samples (212 ms) 500
+[2024-03-24 11:07:25.129] [32mhttp[39m: GET /api/oil-samples (38 ms) 200
+[2024-03-24 11:07:42.110] [32mhttp[39m: OPTIONS /api/oil-samples/4 (1 ms) 204
+[2024-03-24 11:07:42.319] [32mhttp[39m: GET /api/oil-samples/4 (29 ms) 200
+[2024-03-24 11:07:43.621] [31merror[39m: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+Error: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at Object.getReport (/home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:43:22)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at returnBodyMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:42:24)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at policiesMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/policy.js:15:11)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:27:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-03-24 11:07:43.622] [32mhttp[39m: POST /api/oil-samples/report (137 ms) 500
+[2024-03-24 11:07:43.782] [31merror[39m: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+Error: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:81:23
+    at Array.map (<anonymous>)
+    at Object.fetchPreviousSamples (/home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:79:6)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async returnBodyMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:42:18)
+    at async policiesMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/policy.js:15:5)
+    at async /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:27:12
+    at async /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/middlewares/body.js:45:9
+[2024-03-24 11:07:43.782] [32mhttp[39m: POST /api/oil-samples/fetch-previous-samples (156 ms) 500
+[2024-03-24 11:13:21.169] [32mhttp[39m: GET /api/oil-samples/4 (11 ms) 200
+[2024-03-24 11:13:22.333] [31merror[39m: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+Error: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at Object.getReport (/home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:43:22)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at returnBodyMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:42:24)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at policiesMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/policy.js:15:11)
+    at dispatch (/home/ec2-user/Internal_Saas/Back-end/node_modules/koa-compose/index.js:42:32)
+    at /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:27:18
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-03-24 11:13:22.333] [32mhttp[39m: POST /api/oil-samples/report (123 ms) 500
+[2024-03-24 11:13:22.527] [31merror[39m: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+Error: ENOENT: no such file or directory, open 'public/uploads/QQGB2024000050BO.csv'
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at /home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:81:23
+    at Array.map (<anonymous>)
+    at Object.fetchPreviousSamples (/home/ec2-user/Internal_Saas/Back-end/src/api/oil-sample/controllers/oil-sample.js:79:6)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async returnBodyMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:42:18)
+    at async policiesMiddleware (/home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/policy.js:15:5)
+    at async /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/services/server/compose-endpoint.js:27:12
+    at async /home/ec2-user/Internal_Saas/Back-end/node_modules/@strapi/strapi/dist/middlewares/body.js:45:9
+[2024-03-24 11:13:22.528] [32mhttp[39m: POST /api/oil-samples/fetch-previous-samples (177 ms) 500
+[2024-03-24 11:33:47.824] [32mhttp[39m: GET index.html (8 ms) 200
+[2024-03-25 08:40:01.942] [32mhttp[39m: OPTIONS /api/oil-samples (0 ms) 204
+[2024-03-25 08:40:02.463] [32mhttp[39m: GET /api/oil-samples (29 ms) 200
+[2024-03-25 12:20:06.888] [32mhttp[39m: OPTIONS /api/oil-samples (0 ms) 204
+[2024-03-25 12:20:07.427] [32mhttp[39m: GET /api/oil-samples (26 ms) 200
+[2024-03-25 12:36:47.159] [32mhttp[39m: GET index.html (4 ms) 200
+[2024-03-25 13:44:58.422] [32mhttp[39m: GET /api/oil-samples (27 ms) 200
+[2024-03-27 03:38:12.759] [32mhttp[39m: GET index.html (4 ms) 200
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-03-27 11:47:53.469] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-03-27 11:47:53.937] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Wed Mar 27 2024 11:47:54 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 1905 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2046                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2024-03-27 11:48:11.702] [32mhttp[39m: GET index.html (36 ms) 200
+[2024-03-27 11:48:12.025] [32mhttp[39m: GET /assets/images/logo_login.png (10 ms) 200
+[2024-03-28 10:47:44.567] [32mhttp[39m: GET index.html (4 ms) 200
+[2024-03-29 02:24:59.542] [32mhttp[39m: GET index.html (7 ms) 200
+[2024-03-30 14:34:34.836] [32mhttp[39m: GET index.html (3 ms) 200
+[2024-03-30 14:34:35.382] [32mhttp[39m: GET /favicon.ico (1 ms) 200
+[2024-03-30 17:48:01.829] [32mhttp[39m: GET index.html (3 ms) 200
+[2024-03-30 19:38:01.415] [32mhttp[39m: GET index.html (3 ms) 200
+[2024-03-31 03:28:03.155] [32mhttp[39m: GET index.html (3 ms) 200
+[2024-03-31 03:33:08.077] [32mhttp[39m: GET index.html (5 ms) 200
+[2024-03-31 03:33:08.516] [32mhttp[39m: GET /favicon.ico (0 ms) 200
+[2024-03-31 03:33:08.957] [32mhttp[39m: GET /assets/images/logo_login.png (9 ms) 200
+[2024-03-31 03:33:09.386] [32mhttp[39m: GET /robots.txt (6 ms) 200
+[2024-03-31 03:33:09.388] [32mhttp[39m: GET /sitemap.xml (6 ms) 404
+[2024-04-01 09:23:35.995] [32mhttp[39m: GET index.html (5 ms) 200
+[2024-04-01 09:23:36.257] [32mhttp[39m: GET /assets/images/logo_login.png (2 ms) 200
+[2024-04-01 09:23:37.133] [32mhttp[39m: GET /favicon.ico (1 ms) 200
+[2024-04-01 09:23:41.618] [32mhttp[39m: GET /admin (4 ms) 200
+[2024-04-01 09:23:41.869] [32mhttp[39m: GET /admin/runtime~main.15b76721.js (1 ms) 200
+[2024-04-01 09:23:42.018] [32mhttp[39m: GET /admin/main.38b4bc90.js (3 ms) 200
+[2024-04-01 09:23:44.059] [32mhttp[39m: GET /admin/project-type (3 ms) 200
+[2024-04-01 09:23:44.292] [32mhttp[39m: GET /admin/7252.b0a68495.chunk.js (2 ms) 200
+[2024-04-01 09:23:44.534] [32mhttp[39m: GET /admin/1181.293694df.chunk.js (2 ms) 200
+[2024-04-01 09:23:44.535] [32mhttp[39m: GET /admin/7167.abcf5c07.chunk.js (5 ms) 200
+[2024-04-01 09:23:44.663] [32mhttp[39m: GET /admin/1047.677c5540.chunk.js (3 ms) 200
+[2024-04-01 09:23:44.664] [32mhttp[39m: GET /admin/9775.30aefe9e.chunk.js (2 ms) 200
+[2024-04-01 09:23:44.672] [32mhttp[39m: GET /admin/1776.50afb301.chunk.js (4 ms) 200
+[2024-04-01 09:23:44.673] [32mhttp[39m: GET /admin/521.879340e7.chunk.js (3 ms) 200
+[2024-04-01 09:23:44.958] [32mhttp[39m: GET /admin/init (6 ms) 200
+[2024-04-01 09:23:45.215] [32mhttp[39m: GET /admin/telemetry-properties (12 ms) 401
+[2024-04-01 09:23:59.398] [32mhttp[39m: POST /admin/login (28 ms) 400
+[2024-04-01 09:24:04.761] [32mhttp[39m: POST /admin/login (5 ms) 400
+[2024-04-01 09:24:12.230] [32mhttp[39m: POST /admin/login (6 ms) 400
+[2024-04-01 09:26:19.282] [32mhttp[39m: POST /admin/login (120 ms) 200
+[2024-04-01 09:26:19.529] [32mhttp[39m: GET /admin/3028.42c45dcc.chunk.js (2 ms) 200
+[2024-04-01 09:26:20.109] [32mhttp[39m: GET /admin/information (69 ms) 200
+[2024-04-01 09:26:20.224] [32mhttp[39m: GET /admin/users/me/permissions (52 ms) 200
+[2024-04-01 09:26:20.249] [32mhttp[39m: GET /admin/users/me (74 ms) 200
+[2024-04-01 09:26:20.641] [32mhttp[39m: GET /i18n/locales (22 ms) 200
+[2024-04-01 09:26:20.891] [32mhttp[39m: GET /admin/9764.64ef1a0b.chunk.js (2 ms) 200
+[2024-04-01 09:26:21.301] [32mhttp[39m: GET /content-manager/components (39 ms) 200
+[2024-04-01 09:26:21.331] [32mhttp[39m: GET /content-manager/content-types (26 ms) 200
+[2024-04-01 09:26:24.538] [32mhttp[39m: GET /admin/2696.777216f1.chunk.js (4 ms) 200
+[2024-04-01 09:26:24.539] [32mhttp[39m: GET /admin/6739.5235c748.chunk.js (3 ms) 200
+[2024-04-01 09:26:24.541] [32mhttp[39m: GET /admin/9146.99ac0224.chunk.js (2 ms) 200
+[2024-04-01 09:26:24.666] [32mhttp[39m: GET /admin/1445.915c4545.chunk.js (1 ms) 200
+[2024-04-01 09:26:26.428] [32mhttp[39m: GET /admin/1733.f86e2132.chunk.js (1 ms) 200
+[2024-04-01 09:26:26.481] [32mhttp[39m: GET /content-manager/init (41 ms) 200
+[2024-04-01 09:26:26.886] [32mhttp[39m: GET /content-manager/content-types-settings (42 ms) 200
+[2024-04-01 09:26:27.174] [32mhttp[39m: GET /content-manager/content-types/api::equipment.equipment/configuration (38 ms) 200
+[2024-04-01 09:26:27.476] [32mhttp[39m: GET /content-manager/collection-types/api::equipment.equipment?page=1&pageSize=10&sort=name:ASC (36 ms) 200
+[2024-04-01 09:26:40.786] [32mhttp[39m: GET /content-manager/content-types/plugin::users-permissions.user/configuration (26 ms) 200
+[2024-04-01 09:26:41.092] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user?page=1&pageSize=10&sort=username:ASC (58 ms) 200
+[2024-04-01 09:26:44.591] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user/2 (27 ms) 200
+[2024-04-01 09:26:44.872] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/role?pageSize=5&page=1 (24 ms) 200
+[2024-04-01 09:26:45.007] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/model_type?pageSize=5&page=1 (26 ms) 200
+[2024-04-01 09:26:45.073] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/equipment?pageSize=5&page=1 (65 ms) 200
+[2024-04-01 09:26:45.095] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/sample_point?pageSize=5&page=1 (21 ms) 200
+[2024-04-01 09:27:17.470] [32mhttp[39m: PUT /content-manager/collection-types/plugin::users-permissions.user/2 (196 ms) 200
+[2024-04-01 09:27:17.752] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/role?pageSize=5&page=1 (28 ms) 200
+[2024-04-01 09:27:17.887] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/sample_point?pageSize=5&page=1 (28 ms) 200
+[2024-04-01 09:27:17.911] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/equipment?pageSize=5&page=1 (23 ms) 200
+[2024-04-01 09:27:17.936] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/2/model_type?pageSize=5&page=1 (24 ms) 200
+[2024-04-01 09:27:19.987] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user?page=1&pageSize=10&sort=username:ASC (41 ms) 200
+[2024-04-01 09:27:28.170] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user/3 (31 ms) 200
+[2024-04-01 09:27:28.453] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/role?pageSize=5&page=1 (24 ms) 200
+[2024-04-01 09:27:28.602] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/equipment?pageSize=5&page=1 (49 ms) 200
+[2024-04-01 09:27:28.641] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/model_type?pageSize=5&page=1 (39 ms) 200
+[2024-04-01 09:27:28.661] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/sample_point?pageSize=5&page=1 (20 ms) 200
+[2024-04-01 09:27:40.552] [32mhttp[39m: PUT /content-manager/collection-types/plugin::users-permissions.user/3 (203 ms) 200
+[2024-04-01 09:27:40.814] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/role?pageSize=5&page=1 (33 ms) 200
+[2024-04-01 09:27:40.933] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/model_type?pageSize=5&page=1 (21 ms) 200
+[2024-04-01 09:27:40.955] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/equipment?pageSize=5&page=1 (22 ms) 200
+[2024-04-01 09:27:40.978] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/sample_point?pageSize=5&page=1 (22 ms) 200
+[2024-04-01 09:27:47.098] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user?page=1&pageSize=10&sort=username:ASC (56 ms) 200
+[2024-04-01 09:27:49.314] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user/4 (30 ms) 200
+[2024-04-01 09:27:49.590] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/4/role?pageSize=5&page=1 (25 ms) 200
+[2024-04-01 09:27:49.708] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/4/equipment?pageSize=5&page=1 (19 ms) 200
+[2024-04-01 09:27:49.733] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/4/sample_point?pageSize=5&page=1 (24 ms) 200
+[2024-04-01 09:27:49.758] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/4/model_type?pageSize=5&page=1 (24 ms) 200
+[2024-04-01 09:48:24.245] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user?page=1&pageSize=10&sort=username:ASC (40 ms) 200
+[2024-04-01 09:48:26.566] [32mhttp[39m: GET /content-manager/content-types/api::equipment.equipment/configuration (27 ms) 200
+[2024-04-01 09:48:26.843] [32mhttp[39m: GET /content-manager/collection-types/api::equipment.equipment?page=1&pageSize=10&sort=name:ASC (32 ms) 200
+[2024-04-01 09:48:50.625] [32mhttp[39m: GET /content-manager/content-types/plugin::users-permissions.user/configuration (19 ms) 200
+[2024-04-01 09:48:50.918] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user?page=1&pageSize=10&sort=username:ASC (48 ms) 200
+[2024-04-01 09:48:52.185] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user/1 (24 ms) 200
+[2024-04-01 09:48:52.457] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/1/role?pageSize=5&page=1 (20 ms) 200
+[2024-04-01 09:48:52.586] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/1/equipment?pageSize=5&page=1 (22 ms) 200
+[2024-04-01 09:48:52.624] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/1/sample_point?pageSize=5&page=1 (32 ms) 200
+[2024-04-01 09:48:52.646] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/1/model_type?pageSize=5&page=1 (21 ms) 200
+[2024-04-01 09:48:53.832] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user?page=1&pageSize=10&sort=username:ASC (47 ms) 200
+[2024-04-01 09:48:56.057] [32mhttp[39m: GET /content-manager/collection-types/plugin::users-permissions.user/3 (20 ms) 200
+[2024-04-01 09:48:56.339] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/sample_point?pageSize=5&page=1 (24 ms) 200
+[2024-04-01 09:48:56.360] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/equipment?pageSize=5&page=1 (21 ms) 200
+[2024-04-01 09:48:56.380] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/model_type?pageSize=5&page=1 (19 ms) 200
+[2024-04-01 09:48:56.399] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/role?pageSize=5&page=1 (18 ms) 200
+[2024-04-01 09:49:03.511] [32mhttp[39m: PUT /content-manager/collection-types/plugin::users-permissions.user/3 (133 ms) 200
+[2024-04-01 09:49:03.764] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/role?pageSize=5&page=1 (23 ms) 200
+[2024-04-01 09:49:03.883] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/equipment?pageSize=5&page=1 (23 ms) 200
+[2024-04-01 09:49:03.905] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/model_type?pageSize=5&page=1 (21 ms) 200
+[2024-04-01 09:49:03.930] [32mhttp[39m: GET /content-manager/relations/plugin::users-permissions.user/3/sample_point?pageSize=5&page=1 (24 ms) 200
+[2024-04-01 09:53:51.565] [32mhttp[39m: GET /admin/content-manager/collectionType/plugin::users-permissions.user/3 (3 ms) 200
+[2024-04-01 09:53:52.094] [32mhttp[39m: GET /admin/project-type (2 ms) 200
+[2024-04-01 09:53:52.246] [32mhttp[39m: GET /favicon.ico (0 ms) 200
+[2024-04-01 09:53:52.429] [32mhttp[39m: GET /admin/init (6 ms) 200
+[2024-04-01 09:53:52.578] [32mhttp[39m: GET /admin/telemetry-properties (8 ms) 401
+[2024-04-01 10:04:41.227] [32mhttp[39m: GET index.html (2 ms) 200
+[2024-04-01 10:04:41.986] [32mhttp[39m: GET /favicon.ico (0 ms) 200
+[2024-04-01 10:04:42.114] [32mhttp[39m: GET /assets/images/logo_login.png (2 ms) 200
+[2024-04-01 10:20:15.844] [32mhttp[39m: GET index.html (2 ms) 200
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-04-01 10:27:58.390] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-04-01 10:27:58.831] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Mon Apr 01 2024 10:27:59 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 1896 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2045                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2024-04-01 10:28:30.308] [32mhttp[39m: GET index.html (35 ms) 200
+[2024-04-01 10:28:30.569] [32mhttp[39m: GET /assets/images/logo_login.png (16 ms) 200
+[2024-04-01 11:28:08.350] [32mhttp[39m: GET index.html (4 ms) 200
+[2024-04-01 11:28:09.512] [32mhttp[39m: GET /favicon.ico (2 ms) 200
+[2024-04-01 11:28:09.654] [32mhttp[39m: GET /assets/images/logo_login.png (3 ms) 200
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-04-01 11:54:52.116] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-04-01 11:54:52.770] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Mon Apr 01 2024 11:54:52 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 2185 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2354                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2024-04-01 13:24:57.865] [32mhttp[39m: GET index.html (46 ms) 200
+[2024-04-01 13:24:58.140] [32mhttp[39m: GET /assets/images/logo_login.png (25 ms) 200
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-04-01 13:27:26.184] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-04-01 13:27:26.679] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Mon Apr 01 2024 13:27:26 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 2014 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2012                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2024-04-01 13:42:19.691] [32mhttp[39m: GET /admin/content-manager/collectionType/plugin::users-permissions.user/3 (34 ms) 200
+[2024-04-01 13:42:20.067] [32mhttp[39m: GET /admin/project-type (26 ms) 200
+[2024-04-01 13:42:20.337] [32mhttp[39m: GET /admin/init (7 ms) 200
+[2024-04-01 13:42:20.564] [32mhttp[39m: GET /admin/telemetry-properties (3 ms) 401
+[2024-04-01 13:50:39.496] [32mhttp[39m: GET index.html (5 ms) 200
+[2024-04-01 13:50:39.678] [32mhttp[39m: GET /assets/images/logo_login.png (7 ms) 200
+[2024-04-01 13:50:39.968] [32mhttp[39m: GET /favicon.ico (1 ms) 200
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-04-02 12:27:36.308] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-04-02 12:27:36.822] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Tue Apr 02 2024 12:27:37 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 2110 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2530                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+
+> back-end-1@0.1.0 start
+> strapi start
+
+[2024-04-02 12:39:58.113] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2024-04-02 12:39:58.651] [33mwarn[39m: Users-permissions registration has defaulted to accepting the following additional user fields during registration: company,equipment,model_type,sample_point
+
+ Project information
+
+[90m┌────────────────────[39m[90m┬──────────────────────────────────────────────────┐[39m
+[90m│[39m Time               [90m│[39m Tue Apr 02 2024 12:39:58 GMT+0000 (Coordinated … [90m│[39m
+[90m│[39m Launched in        [90m│[39m 2257 ms                                          [90m│[39m
+[90m│[39m Environment        [90m│[39m development                                      [90m│[39m
+[90m│[39m Process PID        [90m│[39m 2009                                             [90m│[39m
+[90m│[39m Version            [90m│[39m 4.15.4 (node v18.16.1)                           [90m│[39m
+[90m│[39m Edition            [90m│[39m Community                                        [90m│[39m
+[90m│[39m Database           [90m│[39m sqlite                                           [90m│[39m
+[90m└────────────────────[39m[90m┴──────────────────────────────────────────────────┘[39m
+
+ Actions available
+
+Welcome back!
+To manage your project 🚀, go to the administration panel at:
+http://localhost:1337/admin
+
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2024-04-02 12:53:57.043] [32mhttp[39m: OPTIONS /api/auth/local (3 ms) 204
+[2024-04-02 12:53:57.360] [32mhttp[39m: POST /api/auth/local (186 ms) 200
+[2024-04-02 12:53:57.494] [32mhttp[39m: OPTIONS /api/users/me?populate=role (1 ms) 204
+[2024-04-02 12:53:57.646] [32mhttp[39m: GET /api/users/me?populate=role (28 ms) 200
+[2024-04-02 12:54:06.459] [32mhttp[39m: POST /api/auth/local (124 ms) 200
+[2024-04-02 12:54:06.632] [32mhttp[39m: GET /api/users/me?populate=role (13 ms) 200
+[2024-04-02 12:54:17.944] [32mhttp[39m: OPTIONS /api/oil-samples?filters[customer_id][$eq]=2 (1 ms) 204
+[2024-04-02 12:54:18.173] [32mhttp[39m: GET /api/oil-samples?filters[customer_id][$eq]=2 (87 ms) 200

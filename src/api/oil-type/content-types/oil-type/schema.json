@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oil_types",
+  "info": {
+    "singularName": "oil-type",
+    "pluralName": "oil-types",
+    "displayName": "OilType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test_parameter": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test-parameter.test-parameter",
+      "inversedBy": "oil_type"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

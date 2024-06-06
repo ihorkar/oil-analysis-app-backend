@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oil_samples",
+  "info": {
+    "singularName": "oil-sample",
+    "pluralName": "oil-samples",
+    "displayName": "OilSample",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sample_id": {
+      "type": "string"
+    },
+    "lub_name": {
+      "type": "string"
+    },
+    "batch_numbers": {
+      "type": "string"
+    },
+    "hours_unit": {
+      "type": "string"
+    },
+    "hours_on_oil": {
+      "type": "string"
+    },
+    "exp_date": {
+      "type": "string"
+    },
+    "oil_brand": {
+      "type": "string"
+    },
+    "sample_point": {
+      "type": "string"
+    },
+    "equipment": {
+      "type": "string"
+    },
+    "model_type": {
+      "type": "string"
+    },
+    "oil_type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "default": "created"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "label": {
+      "type": "text"
+    },
+    "billable": {
+      "type": "boolean",
+      "default": false
+    },
+    "company": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "integer"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "overall_status": {
+      "type": "text"
+    },
+    "overall_range": {
+      "type": "string"
+    },
+    "report": {
+      "type": "text"
+    }
+  }
+}

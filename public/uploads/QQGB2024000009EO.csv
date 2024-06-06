@@ -1,0 +1,32 @@
+id,checked,"param_name",units,method,values,range,category
+4,true,"Appearance",null,Visual,null,Normal,Physical and Chemical Properties
+34,true,"Kinematic Viscosity @ 100°C",cSt,ASTM D445,4345,Normal,Physical and Chemical Properties
+36,true,"Kinematic Viscosity @ 40°C",cSt,ASTM D445l,null,Normal,Physical and Chemical Properties
+64,true,"Total Acid Number (TAN)",mgKOH/gm,ASTM D974,null,Normal,Physical and Chemical Properties
+68,true,"Viscosity Index VI",-,ASTM D2270,null,Normal,Physical and Chemical Properties
+71,true,"Water Content",-,Crackle,null,Normal,Physical and Chemical Properties
+1,true,"Aluminium, Al",ppm wt,ASTM D6595,234234,Normal,Metal Analysis
+2,true,"Antimony, Sb",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+6,true,"Barium, Ba",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+7,true,"Boron, B",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+9,true,"Cadmium, Cd",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+10,true,"Calcium, Ca",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+13,true,"Chromium, Cr",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+16,true,"Copper, Cu",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+32,true,"Iron, Fe",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+38,true,"Lead, Pb",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+39,true,"Lithium, Li",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+40,true,"Magnesium, Mg",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+41,true,"Manganese, Mn",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+42,true,"Molybdenum, Mo",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+44,true,"Nickel, Ni",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+51,true,"Phosphorous, P",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+52,true,"Potassium, K",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+56,true,"Silicon, Si",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+57,true,"Silver, Ag",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+58,true,"Sodium, Na",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+62,true,"Tin, Sn",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+63,true,"Titanium, Ti",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+67,true,"Vanadium, V",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+73,true,"Zinc, Zn",ppm wt,ASTM D6595,null,Normal,Metal Analysis
+21,true,"Diesel",abs,ASTM E2412,23423,Normal,FTIR

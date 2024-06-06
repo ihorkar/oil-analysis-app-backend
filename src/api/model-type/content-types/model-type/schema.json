@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "model_types",
+  "info": {
+    "singularName": "model-type",
+    "pluralName": "model-types",
+    "displayName": "ModelType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "model_type"
+    }
+  }
+}
